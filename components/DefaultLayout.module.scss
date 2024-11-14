@@ -1,0 +1,12 @@
+.body {
+  padding: 1.2rem 2ch;
+  max-width: calc(min(80ch, round(down, 100%, 1ch)));
+}
+
+.pixel {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
