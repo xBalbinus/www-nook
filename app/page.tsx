@@ -8,6 +8,8 @@ import DefaultLayout from '@components/DefaultLayout';
 import Package from '@root/package.json';
 import Script from 'next/script';
 
+import { Deposit } from '@components/Deposit';
+
 export async function generateMetadata({ params, searchParams }) {
   const title = Package.name;
   const description = Package.description;
@@ -57,61 +59,7 @@ export async function generateMetadata({ params, searchParams }) {
 export default async function Page(props) {
   return (
     <DefaultLayout previewPixelSRC="https://intdev-global.s3.us-west-2.amazonaws.com/template-app-icon.png">
-      <div>Accordion</div>
-      <div>Action bar</div>
-      <div>Action button</div>
-      <div>Action list</div>
-      <div>Alert banner</div>
-      <div>Application bar</div>
-      <div>Autocomplete</div>
-      <div>Avatar</div>
-      <div>Badges</div>
-      <div>Bottom sheet</div>
-      <div>Breadcrumbs</div>
-      <div>Button</div>
-      <div>Button group</div>
-      <div>Cards</div>
-      <div>Checkbox</div>
-      <div>Chip</div>
-      <div>Code snippet</div>
-      <div>Combobox</div>
-      <div>Data table</div>
-      <div>Date picker</div>
-      <div>Dialog</div>
-      <div>Divider</div>
-      <div>Drawer</div>
-      <div>Dropdown</div>
-      <div>Empty state</div>
-      <div>Filter input</div>
-      <div>Form</div>
-      <div>Help text</div>
-      <div>Icon</div>
-      <div>Inline message</div>
-      <div>Label</div>
-      <div>Link</div>
-      <div>List</div>
-      <div>Menus</div>
-      <div>Modal</div>
-      <div>Navigation bar</div>
-      <div>Page header</div>
-      <div>Pagination</div>
-      <div>Popover</div>
-      <div>Progress bar</div>
-      <div>Progress indicator</div>
-      <div>Radio button</div>
-      <div>Search</div>
-      <div>Segmented Control</div>
-      <div>Select</div>
-      <div>Sidebar</div>
-      <div>Slider</div>
-      <div>Snackbar</div>
-      <div>Switch</div>
-      <div>Tabs</div>
-      <div>Tag</div>
-      <div>Text area</div>
-      <div>Text field</div>
-      <div>Tooltip</div>
-      <div>Tree view</div>
+      <Deposit />
     </DefaultLayout>
   );
 }
